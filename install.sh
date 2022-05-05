@@ -38,7 +38,7 @@ SHARE_PATH="$INSTALL_PREFIX/share/lyrebird"
 DESKTOP_PATH="$INSTALL_PREFIX/share/applications"
 
 python_version_check() {
-    PYTHON_VERSION=$(python3 --version | grep -Po '3\.\d')
+    PYTHON_VERSION=$(python3 --version | grep -Po '3\.\d+')
 
     PYTHON_MIN_MAJOR=3
     PYTHON_MIN_MINOR=7
